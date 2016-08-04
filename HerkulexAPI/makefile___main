@@ -1,0 +1,17 @@
+CC = g++
+CFLAGS = -W -I/home/em/OPRoS_IDE_v2.1.2/OPRoS_external_package/Linux/include
+TARGET = main
+
+OBJECTS = main.o Herkulex.o
+
+$(TARGET) : $(OBJECTS) 
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS) 
+
+main.o : main.c Herkulex.h 
+	$(CC) $(CFLAGS) -c main.c
+
+Herkulex.o : Herkulex.cpp Herkulex.h
+	$(CC) $(CFLAGS) -c Herkulex.cpp 
+
+clean :
+	rm $(OBJECTS)
