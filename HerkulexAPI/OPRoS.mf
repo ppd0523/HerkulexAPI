@@ -1,0 +1,7 @@
+Manifest-Version:1.0
+Archive-type:OPRoS_Component
+Archive-name:ManipulatorComp.tar
+Archive-description:
+Archive-Element:ManipulatorComp.xml
+Shared-library:lib/
+
