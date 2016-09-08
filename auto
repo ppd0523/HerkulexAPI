@@ -1,0 +1,3 @@
+make
+
+scp libHerkulex.so ubuntu@210.115.43.172:/home/ubuntu
